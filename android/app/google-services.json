@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "463569576416",
+    "project_id": "tiktokclone-dd690",
+    "storage_bucket": "tiktokclone-dd690.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:463569576416:android:63f4b69a4ddfef6ec8cb85",
+        "android_client_info": {
+          "package_name": "habesha_software.com.sibhat_tiktok"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "463569576416-t80f8seejds0t8djr4987l4248okppac.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAPctYqAgOW077hXKgffGDBWFrxr3CNB8E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "463569576416-t80f8seejds0t8djr4987l4248okppac.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
