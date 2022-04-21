@@ -15,16 +15,17 @@ import 'package:sibhat_tiktok/views/screens/auth/login_screen.dart';
 class AuthController extends GetxController{
  static AuthController instance = Get.find();
 
-  Rx<User?> ?_user;
+  late Rx<User?> _user;
   Rx<File?> ?_pickedImage;
  File? get profilePhoto =>_pickedImage?.value;
+  User? get user =>_user.value;
 
  @override
   void onReady() {
     super.onReady();
     _user = Rx<User?>(firebaseAuth.currentUser);
-    _user?.bindStream(firebaseAuth.authStateChanges());
-    ever(_user!, _setInitialScreen);
+    _user.bindStream(firebaseAuth.authStateChanges());
+    ever(_user, _setInitialScreen);
   }
 
   _setInitialScreen(User? user){
@@ -103,3 +104,6 @@ class AuthController extends GetxController{
     }
   }
 }
+//
+// git branch -M main
+// git push -u origin main

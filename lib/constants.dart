@@ -4,11 +4,12 @@ import 'package:flutter/material.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:sibhat_tiktok/controllers/auth_controller.dart';
 import 'package:sibhat_tiktok/views/screens/auth/add_video_screen.dart';
+import 'package:sibhat_tiktok/views/screens/auth/vidoe_screen.dart';
 
-const pages =[
-  Text('Home Screen'),
+List pages =[
+   VideoScreen(),
   Text('Search Screen'),
-  AddVidoeScreen(),
+ const AddVidoeScreen(),
   Text('Message Screen'),
   Text('Profile Screen'),
 ];

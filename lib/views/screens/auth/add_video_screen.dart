@@ -1,5 +1,4 @@
 import 'dart:io';
-
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:sibhat_tiktok/constants.dart';
@@ -76,7 +75,7 @@ class AddVidoeScreen extends StatelessWidget {
           onTap: () =>showOptionsDialog(context),
           child: Container(
             width: 190,
-            height: 50,
+            height: 40,
             decoration: BoxDecoration(color: buttonColor),
             child: Center(
               child: Text(

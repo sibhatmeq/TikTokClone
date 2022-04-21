@@ -52,7 +52,7 @@ class Video{
         uid: snapshot['uid'],
         id: snapshot['id'],
         likes:snapshot['likes'],
-        commentCount: snapshot['commmentCount'],
+        commentCount: snapshot['commentCount'],
         shareCount: snapshot['shareCount'],
         songName: snapshot['songName'],
         caption: snapshot['caption'],

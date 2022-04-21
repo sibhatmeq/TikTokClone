@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:sibhat_tiktok/controllers/upload_vidoe_controller.dart';
 import 'dart:io';
-
 import 'package:video_player/video_player.dart';
-
 import '../../widgets/text_input_field.dart';
 import 'package:get/get.dart';
 class ConfirmScreen extends StatefulWidget {
@@ -37,6 +35,13 @@ UploadVideoController uploadVideoController =Get.put(UploadVideoController());
     controller.setLooping(true);
 
     }
+
+    @override
+  void dispose() {
+    // TODO: implement dispose
+    super.dispose();
+    controller.dispose();
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -44,12 +49,14 @@ UploadVideoController uploadVideoController =Get.put(UploadVideoController());
           child: Column(
             children: [
               const SizedBox(height: 30,),
+
               SizedBox(width: MediaQuery.of(context).size.width,
                  height: MediaQuery.of(context).size.height/1.5,
                 child:VideoPlayer(controller) ,
               ),
+
                SizedBox(
-                height: 30,
+                height: 200,
                 child: SingleChildScrollView(
                   scrollDirection: Axis.vertical,
                   child: Column(
@@ -81,16 +88,13 @@ UploadVideoController uploadVideoController =Get.put(UploadVideoController());
                             style: TextStyle(
                               fontSize: 20,
                               color: Colors.white,
-
                             ),
                           )
                       )
                     ],
-
                   ),
-
                 ),
-              )
+              ),
             ],
           ),
         ),
